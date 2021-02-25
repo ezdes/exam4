@@ -15,7 +15,7 @@ create table bus (
 create table driver (
 	driver_id serial primary key,
 	driver_full_name varchar(100) not null,
-	bus_id int references bus(bus_id) unique not null
+	bus_id int references bus(bus_id) not null
 );
 
 create table bus_log (
